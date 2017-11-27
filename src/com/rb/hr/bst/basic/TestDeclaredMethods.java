@@ -1,5 +1,6 @@
 package com.rb.hr.bst.basic;
-import java.util.*;
+
+import java.util.Arrays;
 
 class Printer <T> {
 
@@ -11,7 +12,7 @@ class Printer <T> {
     
     public <E> void printArray(E[] array)
     {
-        Arrays.asList(array).forEach(item->System.out.println(item));
+        Arrays.asList(array).forEach(System.out::println);
         //for (E el : array) { System.out.println(el); }
     }
 
@@ -23,7 +24,7 @@ public class TestDeclaredMethods {
         
         Integer[] intArray = {1,2,3};
         
-        Printer<Integer> intPrinter = new Printer<Integer>();
+        Printer<Integer> intPrinter = new Printer<>();
         intPrinter.printArray( intArray  );
 
         System.out.println("Number of Methods in the Printer class: " + Printer.class.getDeclaredMethods().length);

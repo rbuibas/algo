@@ -1,8 +1,5 @@
 package com.rb.hr.bst.basic;
 
-import java.io.*;
-import java.util.*;
-
 class NodeLinkedList {
 	int data;
 	NodeLinkedList next;
@@ -18,11 +15,11 @@ class LinkedListDuplicates {
 	public static NodeLinkedList removeDuplicates(NodeLinkedList head) {
 
 		if (head == null)
-			return head;
+			return null;
 
 		NodeLinkedList tHead = head;
 		NodeLinkedList tHead2;
-		while (tHead != null && tHead.next != null) {
+		while (tHead.next != null) {
 			
 			tHead2 = tHead;
 			
@@ -65,8 +62,8 @@ class LinkedListDuplicates {
 	public static void main(String args[]) {
 		Integer[] intArray = { 1,1,1,1,1,1,4};
 		NodeLinkedList root = null;
-		for (int i = 0; i < intArray.length; i++) {
-			root = insert(root, intArray[i]);
+		for (Integer anIntArray : intArray) {
+			root = insert(root, anIntArray);
 		}
 		root = removeDuplicates(root);
 		display(root);

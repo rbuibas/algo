@@ -1,7 +1,6 @@
 package com.rb.hr.misc;
 
-import java.io.*;
-import java.util.*;
+import java.util.Scanner;
 
 public class FineCalculation {
     

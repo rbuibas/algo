@@ -1,6 +1,7 @@
 package com.rb.hr.bst.basic;
 
-import java.util.*;
+import java.util.LinkedList;
+import java.util.Queue;
 
 class Node {
 	Node left, right;
@@ -15,7 +16,7 @@ class Node {
 public class BST_traversal {
 	static void levelOrder(Node root) {
 
-		Queue<Node> treeQ = new LinkedList<Node>();
+		Queue<Node> treeQ = new LinkedList<>();
 		
 		treeQ.add(root);
 		
@@ -52,8 +53,8 @@ public class BST_traversal {
 	public static void main(String args[]) {
 		Integer[] intArray = {3,5,4,7,2,1};
 		Node root = null;
-		for (int i = 0; i < intArray.length; i++) {
-			root = insert(root, intArray[i]);
+		for (Integer anIntArray : intArray) {
+			root = insert(root, anIntArray);
 		}
 		levelOrder(root);
 	}

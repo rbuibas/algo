@@ -9,11 +9,11 @@ public class DTLaundering {
 	
 	private int sellingAmount = 0;
 	int rawData[] = null;
-	List<DTBuyer> buyerList = new ArrayList<DTBuyer>();
+	List<DTBuyer> buyerList = new ArrayList<>();
 	/**
 	 * A map of arbitrary amount of buyers
 	 */
-	Map<List<DTBuyer>, Integer> buyerUnits = new HashMap<List<DTBuyer>, Integer>();
+	Map<List<DTBuyer>, Integer> buyerUnits = new HashMap<>();
 	
 	public DTLaundering(int[] rawDataInput, int sellingAmount) {
 		// initialize stuff if needed
@@ -41,6 +41,7 @@ public class DTLaundering {
 		
 		if (this.sellingAmount == 0) {
 			// we are not selling anything
+			System.out.println("Implement this!");
 		}
 	}
 

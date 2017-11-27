@@ -2,7 +2,6 @@ package com.rb.hr.statistics.mmm;
 
 import java.util.Arrays;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 
@@ -42,14 +41,14 @@ public class Solution {
 		// lets do some Java 8 cool stuff
 
 		double mean = 0;
-		double median = 0;
+		double median;
 		int mode = 0;
 
 		Arrays.parallelSort(array);
 
-		for (int i = 0; i < array.length; i++) {
-			System.out.println(array[i]);
-			mean += array[i];
+		for (int anArray : array) {
+			System.out.println(anArray);
+			mean += anArray;
 		}
 
 		// get mean
@@ -71,11 +70,11 @@ public class Solution {
 	}
 	
 	private static int getMode(int[] array) {
-		Map<Integer, Integer> modeMap = new HashMap<Integer, Integer>();
+		Map<Integer, Integer> modeMap = new HashMap<>();
 		int maxMode = 1;
 		int modeValue = 0;
 		for (int i : array) {
-			int tempCount = 0;
+			int tempCount;
 			if (modeMap.containsKey(i)) {
 				tempCount = modeMap.get(i) + 1;
 			} else {

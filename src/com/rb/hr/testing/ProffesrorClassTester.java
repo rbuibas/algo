@@ -1,13 +1,12 @@
 package com.rb.hr.testing;
 
-import java.io.*;
 import java.util.*;
 
 
 public class ProffesrorClassTester {
 
-    private static List<Integer> randomizableList = new ArrayList<Integer>();
-    private static Queue<Integer> randomizableQueue = new LinkedList<Integer>();
+    private static List<Integer> randomizableList = new ArrayList<>();
+    private static Queue<Integer> randomizableQueue = new LinkedList<>();
 
     private static void initiateRandomizableList() {
         for (int i = 3; i <= 20; i++) {

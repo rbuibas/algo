@@ -1,7 +1,9 @@
 package com.rb.hr.regex;
 
-import java.io.*;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -11,7 +13,7 @@ public class BasicRegex {
 		Scanner sc = new Scanner(System.in);
 		int entries = sc.nextInt();
 
-		List<String> googleUsers = new ArrayList<String>();
+		List<String> googleUsers = new ArrayList<>();
 
 		// RegEx
 		String regexString = "gmail.com$";
@@ -32,11 +34,6 @@ public class BasicRegex {
 				//googleUsers.add(m.group());
 				googleUsers.add(line.split(" ")[0]);
 			}
-		}
-
-		for (int i = 0; i < entries; i++) {
-
-			// System.out.println(lines[i]);
 		}
 
 		Collections.sort(googleUsers);

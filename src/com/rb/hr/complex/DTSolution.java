@@ -36,7 +36,7 @@ public class DTSolution {
 		// raw data input
 		// line1:
 		// int > number of passengers who agreed to buy (N)
-		// int > stolen ammount of gold (X)
+		// int > stolen amount of gold (X)
 		// lineN:
 		// int > value passenger willing to pay
 		// int > grams of gold for which they are paying
@@ -51,7 +51,8 @@ public class DTSolution {
 		} catch (NoSuchElementException e) {
 			// no more lines
 		} finally {
-			// do something
+			// TODO: add logger
+			System.out.printf("Why do I need finally");
 		}
 		
 		// sanity check
