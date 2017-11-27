@@ -5,14 +5,14 @@ import java.util.*;
 
 public class FineCalculation {
     
-    static final int D = 0;
-    static final int M = 1;
-    static final int Y = 2;
-    
-    static final int level1FINE = 15;
-    static final int level2FINE = 500;
-    static final int level3FINE = 10000;
-    
+    private static final int D = 0;
+    private static final int M = 1;
+    private static final int Y = 2;
+
+    private static final int level1FINE = 15;
+    private static final int level2FINE = 500;
+    private static final int level3FINE = 10000;
+
     private static int fineCalculation(int b[], int a[])
     {
         // b array is actual return date
