@@ -44,8 +44,7 @@ public class DTSolution {
 		// get raw data into an array
 		int rawData[] = null;
 		int numBuyers = sc.nextInt();
-		int goldAmount = sc.nextInt();
-		
+
 		try {
 			rawData = new int[numBuyers * 2];
 		} catch (NoSuchElementException e) {

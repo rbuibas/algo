@@ -3,7 +3,7 @@ package com.rb.hr.testing;
 import java.util.*;
 
 
-public class ProffesrorClassTester {
+public class ProfessorClassTester {
 
     private static List<Integer> randomizableList = new ArrayList<>();
     private static Queue<Integer> randomizableQueue = new LinkedList<>();

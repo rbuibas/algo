@@ -14,7 +14,7 @@ class Node {
 }
 
 public class BST_traversal {
-	static void levelOrder(Node root) {
+	private static void levelOrder(Node root) {
 
 		Queue<Node> treeQ = new LinkedList<>();
 		
@@ -34,7 +34,7 @@ public class BST_traversal {
 		treeQ.forEach(item->System.out.print(item.data));
 	}
 
-	public static Node insert(Node root, int data) {
+	private static Node insert(Node root, int data) {
 		if (root == null) {
 			return new Node(data);
 		} else {

@@ -12,7 +12,7 @@ class NodeLinkedList {
 }
 
 class LinkedListDuplicates {
-	public static NodeLinkedList removeDuplicates(NodeLinkedList head) {
+	private static NodeLinkedList removeDuplicates(NodeLinkedList head) {
 
 		if (head == null)
 			return null;
@@ -35,7 +35,7 @@ class LinkedListDuplicates {
 		return head;
 	}
 
-	public static NodeLinkedList insert(NodeLinkedList head, int data) {
+	private static NodeLinkedList insert(NodeLinkedList head, int data) {
 		NodeLinkedList p = new NodeLinkedList(data);
 		if (head == null)
 			head = p;
@@ -51,7 +51,7 @@ class LinkedListDuplicates {
 		return head;
 	}
 
-	public static void display(NodeLinkedList head) {
+	private static void display(NodeLinkedList head) {
 		NodeLinkedList start = head;
 		while (start != null) {
 			System.out.print(start.data + " ");

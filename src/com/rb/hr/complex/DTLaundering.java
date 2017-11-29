@@ -5,11 +5,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class DTLaundering {
+class DTLaundering {
 	
 	private int sellingAmount = 0;
-	int rawData[] = null;
-	List<DTBuyer> buyerList = new ArrayList<>();
+	private int[] rawData = null;
+	private List<DTBuyer> buyerList = new ArrayList<>();
 	/**
 	 * A map of arbitrary amount of buyers
 	 */

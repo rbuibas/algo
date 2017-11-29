@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
+import java.util.stream.IntStream;
 
 public class Solution {
 
@@ -24,15 +25,20 @@ public class Solution {
 
 		int[] inputIntArray = new int[inputArray.length];
 
-		for (int i = 0; i < inputArray.length; i++) {
+		// remember this lambda usage
+		IntStream.range(0, inputArray.length).forEach(i -> {
 			try {
 				inputIntArray[i] = Integer.parseInt(inputArray[i]);
-			} catch (NumberFormatException e) {
+      } catch (NumberFormatException e) {
 				System.err.println(e.getMessage());
 			}
-		}
+		});
 
 		// now process them
+    // just print one for now
+    if (inputArray.length > 0) {
+      System.out.println(inputIntArray[0]);
+    }
 
 	}
 

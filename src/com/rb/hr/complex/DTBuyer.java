@@ -1,6 +1,6 @@
 package com.rb.hr.complex;
 
-public class DTBuyer {
+class DTBuyer {
 	
 	private int amount;
 	private int price;

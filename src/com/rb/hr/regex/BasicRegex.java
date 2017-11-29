@@ -18,7 +18,8 @@ public class BasicRegex {
 		// RegEx
 		String regexString = "gmail.com$";
 		Pattern p = Pattern.compile(regexString);
-		
+
+		//noinspection SpellCheckingInspection
 		String tempLines[] = { "riya riya@gmail.com",
 				"julia julia@julia.me",
 				"julia sjulia@gmail.com",
