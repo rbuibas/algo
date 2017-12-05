@@ -9,7 +9,17 @@ import java.util.regex.Pattern;
 
 public class BasicRegex {
 
-	public static void main(String[] args) {
+
+	public boolean emailValidator2(String email) {
+		// RegEx
+		String regexString = "gmail.com$";
+		Pattern p = Pattern.compile(regexString);
+		Matcher m = p.matcher(email);
+		return m.find();
+	}
+
+	@Deprecated
+	public boolean emailValidator(String email) {
 		Scanner sc = new Scanner(System.in);
 		int entries = sc.nextInt();
 
@@ -43,5 +53,7 @@ public class BasicRegex {
 			System.out.println(temp);
 
 		sc.close();
+
+		return false;
 	}
 }
