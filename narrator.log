@@ -107,3 +107,9 @@ START: 1/25/2019 9:39:19 AM
 	Ideas:
 	1. Parse the list, add elements to a Set; if already added, it's the linked list cycle culprit
 	2. [SOLUTION] Use fast and slow pointer, one advances by two, if they meet, the list is cyclic.
+
+	JS Pain points:
+	# how create classes and add methods/functions to them
+
+	JAVA Pain points:
+	# separation between Node and the LinkedList implementation
