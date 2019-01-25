@@ -1,0 +1,109 @@
+Based on the following Medium article: https://hackernoon.com/50-data-structure-and-algorithms-interview-questions-for-programmers-b4b1ac61f5b0
+
+ARRAYS
+
+1. How do you find the missing number in a given integer array of 1 to 100?
+START: 1/24/2019 2:01:33 PM
+
+	Ideas:
+	1. sort array and pass through it (must if there are duplicates)
+	2. use an additional array
+	3. use the sume of elements (only works for finding ONE missing number)
+
+	JS pain points:
+	# initializing array in js
+		just do it with array = []
+	# filling array with some value
+		can do it with Array.prototype.fill, but there might be some Browser issues and also it fills with a static value,
+		so if you think to use it to fill with different instances of an object, think again.
+	# ternary operator and expressions
+	# reduce on array in JS
+	# JS array sorting
+	# for..in vs for..of
+
+
+	JAVA pain points
+	# reduce on a stream in Java (different than JS)
+		ex: Arrays.stream(intArray).reduce(0, (a, b) -> a + b); //sum
+		ex2: Arrays.stream(intArray).reduce(0, Integer::sum); //sum
+	# print an array
+		can't use array.toString, rather Arrays.toString(array);
+
+END: 1/24/2019 3:29:32 PM
+
+2. How do you find the duplicate number on a given integer array?
+START: 1/24/2019 3:30:32 PM
+
+	Ideas:
+	1. Sort array, go through it and get the duplicates (store them in a Map)
+	2. Pass through array and put all the values into a Map
+
+	JS pain points:
+	# how to declare a Map
+		let someMap = new Map();
+		// remember, no types in JS, so no: Map someMap = new Map();
+	# Array.prototype.push and pop
+
+	JAVA pain points:
+	# sorting an array:
+		Arrays.sort(array); // no return
+	# dynamic array (i.e. how big should I make the second array)
+	# List to array
+
+END: 1/24/2019 4:46:06 PM
+
+3. How do you find the largest and smallest number in an unsorted integer array? 
+
+START: 1/24/2019 4:49:51 PM
+
+	Ideas:
+	1. Sort it and look (nah)
+	2. Assign smallest and largest to be 0, iterate and change accordingly.
+
+	JS Paint points:
+	# when using reduce don't forget to return
+
+END: 1/24/2019 5:06:57 PM
+
+4. How do you find all pairs of an integer array whose sum is equal to a given number?
+
+START: 1/24/2019 5:07:37 PM
+
+	Ideas:
+	1. Classic - nested loops, calculate, store (O^n)
+	2. !! Should use a Set to add the values as we go and compare to the expected value for the sum at the same time
+	3. !! Sort array, use two pointers:
+		- if sum satisfies, print
+		- if sum is less, increase left pointer
+		- if sum is greater, decrease right pointer
+
+END: 1/24/2019 5:49:42 PM
+
+4": How do you reverse String in Java ? How about C ?
+
+START: 1/24/2019 5:53:45 PM
+
+	Ideas:
+	1. StringBuffer reverse (ofc)
+	2. toCharArray() and do magic
+	3. [C] Let's see
+	4. Recursive ?!
+
+	JAVA Paint points:
+	# char[] to String is done: new String(charArray);
+
+
+LINKED LISTS
+
+1. How do you find the middle element of a singly linked list in one pass?
+
+	Ideas:
+	1. Use two pointer, the second gets incremented every second pass; use while
+
+2. How do you check if a given linked list contains a cycle? How do you find the starting node of the cycle?
+
+START: 1/25/2019 9:39:19 AM
+
+	Ideas:
+	1. Parse the list, add elements to a Set; if already added, it's the linked list cycle culprit
+	2. [SOLUTION] Use fast and slow pointer, one advances by two, if they meet, the list is cyclic.
