@@ -28,6 +28,8 @@ void reverseString(char * string, int len) {
 	}
 }
 
+
+
 int main(int argc, char const *argv[])
 {
 	// int t[] = {1, 1, 2, 4, 5, 8, -3, 7, 9, 6, 4, 1, 8, 7, 928};

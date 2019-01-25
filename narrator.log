@@ -113,3 +113,18 @@ START: 1/25/2019 9:39:19 AM
 
 	JAVA Pain points:
 	# separation between Node and the LinkedList implementation
+
+END: 1/25/2019 11:16:05 AM
+
+3. How do you reverse a linked list? 
+
+START: 1/25/2019 11:16:24 AM
+
+	Ideas:
+	1. Use a temp variable
+	2. Recursive
+
+
+BREAK: 1/25/2019 11:45:01 AM
+BREAK OVER: 1/25/2019 2:21:03 PM
+
